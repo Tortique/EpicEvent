@@ -1,5 +1,8 @@
 # EpicEvent
 
+EpicEvent is an event specialized advice and management firm, that supports start-ups willing to organize "epic parties".
+This app is a CRM, to monitore all clients and events.
+
 ## Installation 
 
 Clone repository
