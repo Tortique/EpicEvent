@@ -5,8 +5,7 @@ This app is a CRM, to monitore all clients and events.
 
 ## Documentation
 
-You can find the documentation : https://documenter.getpostman.com/view/14060645/2s8ZDYY2nL
-
+You can find the documentation : https://documenter.getpostman.com/view/14060645/2s9YJjRJYE
 ## Installation 
 
 Clone repository
