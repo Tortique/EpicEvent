@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from datetime import timedelta
 
 import environ
+import logging
 from pathlib import Path
 
 env = environ.Env()
@@ -153,3 +154,29 @@ SIMPLE_JWT = {
 DATE_FORMAT = "%d-%m-%Y"
 
 DATETIME_FORMAT = "%d-%m-%Y %H:%M"
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "format": {
+            "format": "{levelname} {module} {message} {asctime}",
+            "style": "{",
+        },
+    },
+    "handlers": {
+        "file": {
+            "level": "ERROR",
+            "class": "logging.FileHandler",
+            "filename": "errors.log",
+            "formatter": "format",
+        },
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["file"],
+            "level": "ERROR",
+            "propagate": True,
+        },
+    },
+}
