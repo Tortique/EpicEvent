@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from datetime import timedelta
 
 import environ
-import logging
 from pathlib import Path
 
 env = environ.Env()
